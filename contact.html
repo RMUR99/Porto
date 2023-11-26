@@ -13,10 +13,13 @@
 
     <style>
         body {
+          height: 100vh;
+          width: 100vw;
             margin: 0;
             padding: 0;
             background-color: #000;
             padding-bottom: 100px;
+            overflow: hidden;
           }
           
           #contact {
@@ -302,21 +305,26 @@
               </li>
               
 
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Game inudstry work 
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="anime.html">Animations</a></li>
-                  
-                  <li><a class="dropdown-item" href="#">video Game showcase </a></li>
-                </ul>
-              </li>
-
+             
               <li class="nav-item">
-                <a class="nav-link" href="contact.html"> Contact me </a>
-              </li>
+                <a class="nav-link active" aria-current="page" href="anime.html">Animations</a>
+            </li>
 
+            
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="anime.html">Game Design</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="blogs.html">Blogs</a>
+          </li>
+
+
+          
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html"> Contact me </a>
+          </li>
+         
               
             </ul>
             
@@ -324,76 +332,103 @@
         </div>
       </nav>
 
-      <section id="contact">
-  
-        <h1 class="section-header">Contact</h1>
+      
+          
+          <section id="contact" class="container-fluid bg-dark ">
+
+            <div class="row section-banner ">
+              <div class="col-md-offset-3 col-md-6 text-center ">
+                <div>
+                  <span class="line contact"></span>
+                  <span class="section-title contact"></span>
+                  <span class="line contact"></span>
+                </div>
+              </div>
+            </div>
         
-        <div class="contact-wrapper">
         
-        <!-- Left contact page --> 
-          
-          <form id="contact-form" class="form-horizontal" role="form">
-             
-            <div class="form-group">
-              <div class="col-sm-12">
-                <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+            <div class="row max ">
+        
+              <!-- email contact -->
+              <div class="col-sm-4 text-center">
+                <div class="desc">
+                  <div class="icon-contact">
+                    <a data-toggle="tooltip" title="Email" data-placement="top" href="mailto:Ralmurayshid.99@gmail.com">
+                      <i class="fa fa-envelope"></i>
+                      <h2>Email</h2>
+                    </a>
+                  </div>
+                </div>
               </div>
+        
+              <!-- facebook contact -->
+              <div class="col-sm-4 text-center">
+                <div class="desc">
+                  <div class="icon-contact">
+                    <a data-toggle="tooltip" title="CV" data-placement="top" href="Reema Almurayshid CV 2023..pdf" target="_blank">
+                      <i class="fa-solid fa-file-pdf"></i>
+                      <h2>CV</h2>
+                    </a>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Twitter contact -->
+              <div class="col-sm-4 text-center">
+                <div class="desc">
+                  <div class="icon-contact">
+                    <a data-toggle="tooltip" title="Twitter" data-placement="top" href="https://dev.to/rmur99" target="_blank">
+                      <i class="fa-brands fa-dev"></i>
+                      <h2>DEV</h2>
+                    </a>
+                  </div>
+                </div>
+              </div>
+        
             </div>
-      
-            <div class="form-group">
-              <div class="col-sm-12">
-                <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
-              </div>
-            </div>
-      
-            <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
-            
-            <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-              <div class="alt-send-button">
-                <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
-              </div>
-            
-            </button>
-            
-          </form>
-          
-        <!-- Left contact page --> 
-          
-            <div class="direct-contact-container">
-      
-              <ul class="contact-list">
-                <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Riyadh</span></i></li>
-                
-               
-                
-                <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">Ralmurayshid.99@gmail.com</a></span></i></li>
-                
-              </ul>
-      
-              <hr>
-              <ul class="social-media-list ">
-                <li><a href="https://github.com/RMUR99"  bs-target="_blank" class="contact-icon">
-                  <i class="fab fa-github" aria-hidden="true"></i></a>
-                </li>
-                
-                <li><a href="https://www.linkedin.com/in/reema-almurayshid-28018820a/"  bs-target="_blank" class="contact-icon">
-                  <i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                </li>
-                      
-              </ul>
-              <hr>
+        
+          </section>
+       
+              
+              
       
              
       
-            </div>
+            </div> 
           
         </div>
+
+        <footer class="bg-dark text-center text-white">
+          <!-- Grid container -->
+          <div class="container p-0 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-1">
+              
+        
+              <!-- Linkedin -->
+              <a
+                class="btn text-white btn-floating m-1"
+                style="background-color: #0082ca;"
+                href="https://www.linkedin.com/in/reema-almurayshid-28018820a/"
+                role="button"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <!-- Github -->
+              <a
+                class="btn text-white btn-floating m-1"
+                style="background-color: #333333;"
+                href="https://github.com/RMUR99"
+                role="button"
+                ><i class="fab fa-github"></i
+              ></a>
+            </section>
+            <!-- Section: Social media -->
+          </div>
         
       </section>  
-        
 
-
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+     
+<!-- <script src="script.js"></script> -->
 
 <script src="script.js"></script>
 </body>

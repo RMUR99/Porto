@@ -1,121 +1,211 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    
-    <!-- //fontawesome CDN -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <link rel="stylesheet" href="style.css" >
-    <title>Portofolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+  <!-- //fontawesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>Portofolio</title>
 
 </head>
+
 <body>
-   <!-- navbar -->
-       
-       <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/index.html">Home</a>
-          <!-- Buttons -->
-          <button class="navbar-toggler" type="button" 
-          data-bs-toggle="collapse" 
-          data-bs-target="navbar-nav" 
-          aria-controls="navbar-nav " 
-          aria-expanded="false" 
-          aria-label="Toggle 
-          navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+
+  <!-- <nav class="navbar navbar-expand-lg bg-dark navbar-dark"> -->
+
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <!-- Buttons -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbar-nav"
+        aria-controls="navbar-nav " aria-expanded="false" aria-label="Toggle 
+        navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
 
 
-          <div class="collapse navbar-collapse na" id="navbarSupportedContent">
-            <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="aboutme.html">About me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"></a>
-              </li>
-                   
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="illustration.html">Illustrations</a>
-              </li>
-              
+      <div class="collapse navbar-collapse na" id="navbarSupportedContent">
+        <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="aboutme.html">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
 
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Game inudstry work 
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="anime.html">Animations</a></li>
-                  
-                  <li><a class="dropdown-item" href="#">video Game showcase </a></li>
-                </ul>
-              </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="illustration.html">Illustrations</a>
+          </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html"> Contact me </a>
-              </li>
 
-              
-            </ul>
-            
+
+
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="anime.html">Animations</a>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="gameDesign.html">Game Design</a>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="blogs.html">Blogs</a>
+          </li>
+
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html"> Contact me </a>
+          </li>
+
+
+
+
+
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- start of  main banner -->
+  <section class="container-fluid section bgimage" id="home">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 my_text">
+        <h2 class="myName">Reema Almurayshid</h2>
+        <p class="myDescription">Aspiring Software Developer/Engineer</p>
+      </div>
+    </div>
+  </section>
+  <!-- //end of main banner -->
+  <!-- < project start > -->
+
+  <!-- bootstrap image gallery 1 -->
+  <div class="container-fluid bg-dark">
+
+    <div class="gallery-intro ">
+      <h1 class="text-center">Coding Projects Showcase </h1>
+
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6 col-md-4 col-lg-3">
+
+        <div class="card bg-black text-light text-center rounded-4 p-2 pb-0 shadow border-0" style="width: 18rem;">
+
+          <video autoplay loop muted>
+            <source src="/Videos/JP hiragana.mp4" type="video/mp4" />
+          </video>
+          <!-- <img src="..."
+            class="rounded-4" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title fw-bold">React Japanese </h5>
+            <p class="card-text">Simple react project that helps you practice Hiragana , and corrects you if you are
+              wrong </p>
+
           </div>
         </div>
-      </nav>
 
-      <!-- start of  main banner -->
-      <section class="container-fluid section bgimage" id="home">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 my_text">
-                <h2 class="myName">Reema Almurayshid</h2>
-                <p class="myDescription">I am interested in learning new things</p>
-            </div>
+
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card bg-black text-light text-center rounded-4 p-2 pb-0 shadow border-0" style="width: 18rem;">
+          <video autoplay loop muted>
+            <source src="/Videos/qr_square.MP4" type="video/mp4" />
+          </video>
+          <div class="card-body">
+            <h5 class="card-title fw-bold"> JS QR Generator</h5>
+            <p class="card-text">This is a Java script QR generator that generates by putting the link , it shakes when
+              input is null </p>
+
+          </div>
         </div>
-    </section>
-      <!-- //end of main banner -->
-    <!-- < ABOUT ME SECTION > -->
-   
+      </div>
 
 
 
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card bg-black text-light text-center rounded-4 p-2 pb-0 shadow border-0" style="width: 18rem;">
+          <video class="video-fluid  " autoplay loop muted style="height:fit-content;">
+
+            <source src="/Videos/Snake.mp4" type="video/mp4" style="height: fit-content;" />
+          </video>
+          <div class="card-body">
+            <h5 class="card-title fw-bold"> JS Snake Game </h5>
+            <p class="card-text">Simple snake game using JavaScript , the more the snake eats the bigger it gets </br>
+            </p>
+
+          </div>
+        </div>
+      </div>
 
 
-    <!-- bootstrap image gallery 1 -->
-<div class="container-fluid bg-dark" >
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card bg-black text-light text-center rounded-4 p-4 pb-0 shadow border-0" style="width: 18rem;">
+          <video class="video-fluid " autoplay loop muted>
+            <source src="/Videos/notes_square.MP4" type="video/mp4" />
+          </video>
+          <div class="card-body">
+            <h5 class="card-title fw-bold">JS Note taker</h5>
+            <p class="card-text">This is a simple note taking website where it can get stored in the local memory and
+              you may edit/delete as well </p>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- bootstrap image gallery 1 -->
+  <div class="container-fluid bg-dark">
 
     <div class="gallery-intro ">
       <h1 class="text-center">Illustration and game design </h1>
-      <p class="text-center">Iuse procreate / Medibang to illustrate </p>
+      <p class="text-center">I use Procreate / Medibang to illustrate </p>
     </div>
-  
+
     <div class="row">
       <div class="col-sm-6 col-md-4 col-lg-3">
         <figure>
           <img src="./images/cats.png " class="img-fluid" alt="Responsive image">
-          <figcaption class="tab-img-caption-color" >Cat</figcaption>
+          <figcaption class="tab-img-caption-color">Cat</figcaption>
         </figure>
       </div>
       <div class="col-sm-6 col-md-4 col-lg-3">
         <figure>
-          <img src="./images/leon.png "  class="img-fluid" alt="Responsive image">
+          <img src="./images/leon.png " class="img-fluid" alt="Responsive image">
           <figcaption class="tab-img-caption-color">Leon</figcaption>
         </figure>
       </div>
       <div class="col-sm-6 col-md-4 col-lg-3">
         <figure>
-          <img src="./images/demon.png "  class="img-fluid" alt="Responsive image">
+          <img src="./images/demon.png " class="img-fluid" alt="Responsive image">
           <figcaption class="tab-img-caption-color">Demon</figcaption>
         </figure>
       </div>
       <div class="col-sm-6 col-md-4 col-lg-3">
         <figure>
-          <img src="./images/harmony.png "  class="img-fluid" alt="Responsive image">
+          <img src="./images/harmony.png " class="img-fluid" alt="Responsive image">
           <figcaption class="tab-img-caption-color">Harmony OC </figcaption>
         </figure>
-     
+
       </div>
     </div>
   </div>
@@ -127,39 +217,27 @@
     <div class="container p-4 pb-0">
       <!-- Section: Social media -->
       <section class="mb-4">
-        
-  
+
+
         <!-- Linkedin -->
-        <a
-          class="btn text-white btn-floating m-1"
-          style="background-color: #0082ca;"
-          href="#!"
-          role="button"
-          ><i class="fab fa-linkedin-in"></i
-        ></a>
+        <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;"
+          href="https://www.linkedin.com/in/reema-almurayshid-28018820a/" role="button"><i
+            class="fab fa-linkedin-in"></i></a>
         <!-- Github -->
-        <a
-          class="btn text-white btn-floating m-1"
-          style="background-color: #333333;"
-          href="#!"
-          role="button"
-          ><i class="fab fa-github"></i
-        ></a>
+        <a class="btn text-white btn-floating m-1" style="background-color: #333333;" href="https://github.com/RMUR99"
+          role="button"><i class="fab fa-github"></i></a>
       </section>
       <!-- Section: Social media -->
     </div>
     <!-- Grid container -->
-  
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2023 using bootstrap documentation :
-      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-    </div>
 
-    
-    
-   <!-- // add it down too bootstrap script -->
+    <!-- Copyright -->
+   
+
+    <!-- // add it down too bootstrap script -->
+
     <script src="script.js"></script>
-    
+
 </body>
+
 </html>

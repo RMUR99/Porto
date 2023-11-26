@@ -128,6 +128,36 @@
 }
 
 
+.icon-contact {
+  text-align: center;
+  font-size: 7.5em;
+  color: rgb(60, 87, 73);
+  padding-top: 0px;
+  padding-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
+  margin-top: 80px
+}
+
+.icon-contact a {
+  color: rgb(49, 78, 64);
+}
+
+#contact {
+  width: 100vw;
+  height: 100vh;
+ 
+   background-position: center center;
+  
+  background-size: cover;
+  
+}
+
+
+
+
+
+
+ 
 
 /* Tried to change the drop down menu color  */
 /* .nav-link #dropdown-menu  {

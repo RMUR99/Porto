@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>About me</title>
+    <Style>
+        
+
+        .grid {
+            display: grid;
+            grid-template-areas:
+                "header"
+                "nav"
+                "main"
+                "right"
+                "footer";
+            grid-template-columns: 100%;
+            grid-template-rows:
+                100px 300px 1fr 50px 50px;
+       
+            height: calc(100vh - 12px);
+            /* 2x the gap */
+        }
+
+        .grid>* {
+            display: grid;
+        }
+
+        .grid p {
+            justify-self: center;
+            align-self: center;
+        }
+
+        .grid_header {
+            background-color: #FEBAC5;
+            grid-area: header;
+        }
+
+        .grid_main {
+            background-color: #C2EAE9;
+            grid-area: main;
+        }
+
+        .grid_left {
+            background-color: #FACFD7;
+            grid-area: nav;
+        }
+
+        .grid_right {
+            background-color: #6CD1EA;
+            grid-area: right;
+        }
+
+        .grid_footer {
+            background-color: #F8EFB6;
+            grid-area: footer;
+           
+        }
+
+        @media screen and (min-width: 600px) {
+            .grid {
+                grid-template-areas:
+                    "header header header"
+                    "nav left right"
+                    "footer footer footer";
+                grid-template-columns:
+                0px 1fr 0px;
+                grid-template-rows:
+                    75px 1fr 100px;
+            }
+        }
+    </Style>
+</head>
+
+<body>
+    <div class="grid">
+
+
+        <header class="grid_header">
+         
+       <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html">Home</a>
+          <!-- Buttons -->
+          <button class="navbar-toggler" type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="navbar-nav" 
+          aria-controls="navbar-nav " 
+          aria-expanded="false" 
+          aria-label="Toggle 
+          navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+
+          <div class="collapse navbar-collapse na" id="navbarSupportedContent">
+            <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/aboutme.html">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"></a>
+              </li>
+                   
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/illustration.html">Illustrations</a>
+              </li>
+              
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Game inudstry work 
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Character design</a></li>
+                  
+                  
+                  <li><a class="dropdown-item" href="#">video Game showcase </a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Contact me </a>
+              </li>
+
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+        </header>
+        <main class="grid_main">
+             
+            <div class="container-fluid bg-dark">
+
+                <secttion class="aboutme  py-5 bg-dark">
+                    <div class="container-fluid bg-dark  py-5">
+        
+                        <div class="row bg-dark">
+                            <div class="col-lg-5">
+                                <img src="images/keyboard.jpg" class="img-fluid" alt="keyboard">
+                            </div>
+            <div class="col-lg-7 pt-3  bg-dark">
+                <h1>About Me </h1>
+                <p>I am <span class="font-weight-bold">Reema Almurayshid</span> I am Fresh Graduate Information
+                    System Student</p>
+                <p class="py-3">I am Reema Almurayshid I am writing this for bootstrap testing purposes</p>
+
+                <!-- <Progress Bar > -->
+                <div class="progress">
+                    <div class="prog-value1">
+                        <p>HTML / CSS <span text-white float-right>50%</span> </p>
+
+                    </div>
+                </div>
+
+                <div class="progress my-3">
+                    <div class="prog-value2">
+                        <p>Illustration <span text-white float-right>80%</span> </p>
+
+                    </div>
+                </div>
+
+                <div class="progress">
+                    <div class="prog-value3">
+                        <p>Game Design <span text-white float-right>70%</span> </p>
+
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </main>
+        
+        <footer class="grid_footer">
+            
+            <footer class="bg-dark text-center text-white">
+                <!-- Grid container -->
+                <div class="container p-4 pb-0">
+                  <!-- Section: Social media -->
+                  <section class="mb-4">
+                    
+              
+                    <!-- Linkedin -->
+                    <a
+                      class="btn text-white btn-floating m-1"
+                      style="background-color: #0082ca;"
+                      href="#!"
+                      role="button"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <!-- Github -->
+                    <a
+                      class="btn text-white btn-floating m-1"
+                      style="background-color: #333333;"
+                      href="#!"
+                      role="button"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </section>
+                  <!-- Section: Social media -->
+                </div>
+                <!-- Grid container -->
+                  
+
+
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -13,10 +13,17 @@ if ( windowPathname === navLinkPathname || (windowPathname === '/index.html' && 
      
 });
 
-document.querySelector('#contact-form').addEventListener('submit', (e) => {
-    e.preventDefault();
-    e.target.elements.name.value = '';
-    e.target.elements.email.value = '';
-    e.target.elements.message.value = '';
-  });
+
+function redirectToLink() {
+    window.location.href = "https://dev.to/rmur99/bashing-as-a-junior-developer-gone-right--2l3i"; // Replace with your desired link
+  }
+
+
+  function redirectToLinkSecond() {
+    window.location.href = "https://github.com/RMUR99/Color-Random-Generator"; // Replace with your desired link
+  }
+
+  function redirectToLinkThird() {
+    window.location.href = "https://github.com/RMUR99/Image-Controller"; // Replace with your desired link
+  }
 
