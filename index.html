@@ -1,224 +1,88 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- //fontawesome CDN -->
+  <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css"> 
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
-  <title>Portofolio</title>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 
+  <title>Portfolio</title>
+
+  <style>
+    /* Additional CSS styles */
+    body {
+      overflow-x: hidden; /* Hide horizontal scrollbar */
+    }
+
+    .container-full {
+      margin: auto;
+      width: 100%;
+      padding: 0 15px;
+    }
+
+    .scrollable {
+      overflow-y: auto; /* Enable vertical scrolling */
+      max-height: 100vh; /* Set maximum height to full viewport height */
+    }
+  </style>
 </head>
 
 <body>
 
-  <!-- <nav class="navbar navbar-expand-lg bg-dark navbar-dark"> -->
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <!-- Navbar content -->
+  </nav>
 
-
-   <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">Home</a>
-    <!-- Buttons -->
-    <button class="navbar-toggler" type="button" 
-            data-bs-toggle="collapse" 
-            data-bs-target="#navbarSupportedContent" 
-            aria-controls="navbarSupportedContent" 
-            aria-expanded="false" 
-            aria-label="Toggle navigation">
-      <i class="navbar-toggler-icon"></i>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="aboutme.html">About me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="illustration.html">Illustrations</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="anime.html">Animations</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="gameDesign.html">Game Design</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="blogs.html">Blogs</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact me</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-
-
-  <!-- start of  main banner -->
+  <!-- Main banner -->
   <section class="container-fluid section bgimage" id="home">
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 my_text">
-        <h2 class="myName">Reema Almurayshid</h2>
-        <p class="myDescription">Aspiring Software Developer/Engineer</p>
-      </div>
-    </div>
+    <!-- Banner content -->
   </section>
-  <!-- //end of main banner -->
-  <!-- < project start > -->
 
-  <!-- bootstrap image gallery 1 -->
-  <div class="container-fluid bg-dark">
-
-    <div class="gallery-intro ">
+  <!-- Projects section -->
+  <div class="container-full bg-dark scrollable">
+    <!-- Coding Projects Showcase -->
+    <div class="gallery-intro">
       <h1 class="text-center">Coding Projects Showcase </h1>
-
+    </div>
+    <div class="row">
+      <!-- Project cards -->
+      <!-- Add your project cards here -->
     </div>
 
+    <!-- Illustration and game design -->
+    <div class="gallery-intro">
+      <h1 class="text-center">Illustration and Game Design</h1>
+      <p class="text-center">I use Procreate / Medibang to illustrate</p>
+    </div>
     <div class="row">
-      <div class="col-sm-6 col-md-4 col-lg-3">
-
-        <div class="card bg-black text-light text-center rounded-4 p-2 pb-0 shadow border-0" style="width: 18rem;">
-
-          <video autoplay loop muted>
-            <source src="/Porto.github.io/Videos/JP hiragana.mp4" type="video/mp4" />
-          </video>
-          <!-- <img src="..."
-            class="rounded-4" alt="..."> -->
-          <div class="card-body">
-            <h5 class="card-title fw-bold">React Japanese </h5>
-            <p class="card-text">Simple react project that helps you practice Hiragana , and corrects you if you are
-              wrong </p>
-
-          </div>
-        </div>
-
-
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <div class="card bg-black text-light text-center rounded-4 p-2 pb-0 shadow border-0" style="width: 18rem;">
-          <video autoplay loop muted>
-            <source src="/Porto.github.io/Videos/qr_square.MP4" type="video/mp4" />
-          </video>
-          <div class="card-body">
-            <h5 class="card-title fw-bold"> JS QR Generator</h5>
-            <p class="card-text">This is a Java script QR generator that generates by putting the link , it shakes when
-              input is null </p>
-
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <div class="card bg-black text-light text-center rounded-4 p-2 pb-0 shadow border-0" style="width: 18rem;">
-          <video class="video-fluid  " autoplay loop muted style="height:fit-content;">
-
-            <source src="/Porto.github.io/Videos/Snake.mp4" type="video/mp4" style="height: fit-content;" />
-          </video>
-          <div class="card-body">
-            <h5 class="card-title fw-bold"> JS Snake Game </h5>
-            <p class="card-text">Simple snake game using JavaScript , the more the snake eats the bigger it gets </br>
-            </p>
-
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <div class="card bg-black text-light text-center rounded-4 p-4 pb-0 shadow border-0" style="width: 18rem;">
-          <video class="video-fluid " autoplay loop muted>
-            <source src="/Porto.github.io/Videos/notes_square.MP4" type="video/mp4" />
-          </video>
-          <div class="card-body">
-            <h5 class="card-title fw-bold">JS Note taker</h5>
-            <p class="card-text">This is a simple note taking website where it can get stored in the local memory and
-              you may edit/delete as well </p>
-
-          </div>
-        </div>
-
-      </div>
+      <!-- Illustration and game design cards -->
+      <!-- Add your illustration and game design cards here -->
     </div>
   </div>
 
-
-
-  <!-- bootstrap image gallery 1 -->
-  <div class="container-fluid bg-dark">
-
-    <div class="gallery-intro ">
-      <h1 class="text-center">Illustration and game design </h1>
-      <p class="text-center">I use Procreate / Medibang to illustrate </p>
-    </div>
-
-    <div class="row">
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <figure>
-          <img src="./images/cats.png " class="img-fluid" alt="Responsive image">
-          <figcaption class="tab-img-caption-color">Cat</figcaption>
-        </figure>
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <figure>
-          <img src="./images/leon.png " class="img-fluid" alt="Responsive image">
-          <figcaption class="tab-img-caption-color">Leon</figcaption>
-        </figure>
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <figure>
-          <img src="./images/demon.png " class="img-fluid" alt="Responsive image">
-          <figcaption class="tab-img-caption-color">Demon</figcaption>
-        </figure>
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <figure>
-          <img src="./images/harmony.png " class="img-fluid" alt="Responsive image">
-          <figcaption class="tab-img-caption-color">Harmony OC </figcaption>
-        </figure>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- < -- FOOTER > -->
-
+  <!-- Footer -->
   <footer class="bg-dark text-center text-white">
-    <!-- Grid container -->
-    <div class="container p-4 pb-0">
-      <!-- Section: Social media -->
-      <section class="mb-4">
+    <!-- Footer content -->
+  </footer>
 
-
-        <!-- Linkedin -->
-        <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;"
-          href="https://www.linkedin.com/in/reema-almurayshid-28018820a/" role="button"><i
-            class="fab fa-linkedin-in"></i></a>
-        <!-- Github -->
-        <a class="btn text-white btn-floating m-1" style="background-color: #333333;" href="https://github.com/RMUR99"
-          role="button"><i class="fab fa-github"></i></a>
-      </section>
-      <!-- Section: Social media -->
-    </div>
-    <!-- Grid container -->
-
-    <!-- Copyright -->
-   
-
-    <!-- // add it down too bootstrap script -->
-
-    <script src="script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js" integrity="sha512-ToL6UYWePxjhDQKNioSi4AyJ5KkRxY+F1+Fi7Jgh0Hp5Kk2/s8FD7zusJDdonfe5B00Qw+B8taXxF6CFLnqNCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js"
+    integrity="sha512-ToL6UYWePxjhDQKNioSi4AyJ5KkRxY+F1+Fi7Jgh0Hp5Kk2/s8FD7zusJDdonfe5B00Qw+B8taXxF6CFLnqNCw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Your custom script -->
+  <script src="script.js"></script>
 </body>
 
 </html>
