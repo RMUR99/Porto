@@ -2,87 +2,138 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>About Me</title>
 
-  <!-- Font Awesome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Additional CSS styles */
+        body {
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+        }
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        .container-full {
+            margin: auto;
+            width: 100%;
+            padding: 0 15px;
+        }
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
+        .scrollable {
+            overflow-y: auto; /* Enable vertical scrolling */
+            max-height: 100vh; /* Set maximum height to full viewport height */
+        }
 
-  <title>Portfolio</title>
+        .progress-bar {
+            background-color: black; /* Set progress bar background color */
+        }
 
-  <style>
-    /* Additional CSS styles */
-    body {
-      overflow-x: hidden; /* Hide horizontal scrollbar */
-    }
+        .progress-bar span {
+            color: white; /* Set progress bar text color */
+        }
 
-    .container-full {
-      margin: auto;
-      width: 100%;
-      padding: 0 15px;
-    }
+        /* Center align content */
+        .center-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
 
-    .scrollable {
-      overflow-y: auto; /* Enable vertical scrolling */
-      max-height: 100vh; /* Set maximum height to full viewport height */
-    }
-  </style>
+        /* Center align text within progress bars */
+        .progress-bar p {
+            margin: 0;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-    <!-- Navbar content -->
-  </nav>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Home</a>
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-  <!-- Main banner -->
-  <section class="container-fluid section bgimage" id="home">
-    <!-- Banner content -->
-  </section>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <!-- Add more navbar links if needed -->
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <!-- Projects section -->
-  <div class="container-full bg-dark scrollable">
-    <!-- Coding Projects Showcase -->
-    <div class="gallery-intro">
-      <h1 class="text-center">Coding Projects Showcase </h1>
+    <!-- Main content -->
+    <div class="container-full center-content bg-dark">
+        <section class="aboutme py-5 bg-dark">
+            <div class="container-fluid bg-dark py-5">
+                <div class="row bg-dark">
+                    <!-- Your About Me section content here -->
+                    <div class="col-lg-5">
+                        <img src="./images/keyboard.jpg" class="img-fluid" alt="keyboard">
+                    </div>
+                    <div class="col-lg-7 pt-3">
+                        <h1 class="text-center">About Me</h1>
+                        <p class="text-center">I am <span class="font-weight-bold">Reema Almurayshid</span>, a Fresh
+                            Graduate Information System Student. I like learning new things.</p>
+
+                        <!-- Progress Bars -->
+                        <div class="progress my-3">
+                            <div class="progress-bar bg-black" style="width: 50%;">
+                                <p>HTML / CSS <span class="float-right text-white">50%</span></p>
+                            </div>
+                        </div>
+                        <div class="progress my-3">
+                            <div class="progress-bar bg-black" style="width: 80%;">
+                                <p>Illustration <span class="float-right text-white">80%</span></p>
+                            </div>
+                        </div>
+                        <div class="progress my-3">
+                            <div class="progress-bar bg-black" style="width: 70%;">
+                                <p>Game Design <span class="float-right text-white">70%</span></p>
+                            </div>
+                        </div>
+                        <!-- Add more progress bars if needed -->
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-    <div class="row">
-      <!-- Project cards -->
-      <!-- Add your project cards here -->
-    </div>
 
-    <!-- Illustration and game design -->
-    <div class="gallery-intro">
-      <h1 class="text-center">Illustration and Game Design</h1>
-      <p class="text-center">I use Procreate / Medibang to illustrate</p>
-    </div>
-    <div class="row">
-      <!-- Illustration and game design cards -->
-      <!-- Add your illustration and game design cards here -->
-    </div>
-  </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+        <div class="container p-4 pb-0">
+            <section class="mb-4">
+                <!-- Social media links -->
+                <!-- Add your social media links here -->
+            </section>
+        </div>
+    </footer>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-center text-white">
-    <!-- Footer content -->
-  </footer>
-
-  <!-- Bootstrap Bundle JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js"
-    integrity="sha512-ToL6UYWePxjhDQKNioSi4AyJ5KkRxY+F1+Fi7Jgh0Hp5Kk2/s8FD7zusJDdonfe5B00Qw+B8taXxF6CFLnqNCw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- Your custom script -->
-  <script src="script.js"></script>
+    <!-- Bootstrap JS bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- Your custom script if any -->
+    <script src="script.js"></script>
 </body>
 
 </html>
