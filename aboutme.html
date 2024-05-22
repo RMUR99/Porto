@@ -1,54 +1,26 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>About Me</title>
+    <style>
+        .prog-value1 {
+            height: 20px; /* Adjust this height based on your preference */
+        }
+    </style>
 </head>
 
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Home</a>
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="aboutme.html">About me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="illustration.html">Illustrations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="anime.html">Animations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gameDesign.html">Game Design</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blogs.html">Blogs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact me</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <!-- Navbar content -->
     </nav>
 
     <!-- About Me Section -->
@@ -57,53 +29,49 @@
             <div class="container-fluid bg-dark py-5">
                 <div class="row bg-dark">
                     <div class="col-lg-5">
-                        <img src="./images/keyboard.jpg" class="img-fluid" alt="keyboard" style="height: 600px;">
+                        <!-- Image goes here -->
                     </div>
                     <div class="col-lg-7 pt-3 bg-dark">
                         <h1>About Me</h1>
                         <p>I am <span class="font-weight-bold">Reema Almurayshid</span> I am Fresh Graduate Information
                             System Student</p>
                         <p class="py-3">I like learning new things</p>
-                        <!-- Progress Bar -->
+                        <!-- Progress Bars -->
                         <div class="progress">
-                            <div class="prog-value1">
-                                <p>HTML / CSS <span text-white float-right>50%</span> </p>
+                            <div class="prog-value1 progress-bar bg-success" style="width: 50%;">
+                                <p class="text-white">HTML / CSS <span class="float-right">50%</span> </p>
                             </div>
                         </div>
-                         <div class="progress">
-                            <div class="prog-value1">
-                                <p>Illustration<span text-white float-right>80%</span> </p>
+                        <div class="progress">
+                            <div class="prog-value1 progress-bar bg-info" style="width: 80%;">
+                                <p class="text-white">Illustration <span class="float-right">80%</span> </p>
                             </div>
                         </div>
-                         <div class="progress">
-                            <div class="prog-value1">
-                                <p>Game Design <span text-white float-right>70%</span> </p>
+                        <div class="progress">
+                            <div class="prog-value1 progress-bar bg-warning" style="width: 70%;">
+                                <p class="text-white">Game Design <span class="float-right">70%</span> </p>
                             </div>
                         </div>
-
-                         <div class="progress">
-                            <div class="prog-value1">
-                                <p>Unity C# <span text-white float-right>70%</span> </p>
+                        <div class="progress">
+                            <div class="prog-value1 progress-bar bg-secondary" style="width: 70%;">
+                                <p class="text-white">Unity C# <span class="float-right">70%</span> </p>
                             </div>
                         </div>
-                         <div class="progress">
-                            <div class="prog-value1">
-                                <p>JS <span text-white float-right>50%</span> </p>
+                        <div class="progress">
+                            <div class="prog-value1 progress-bar bg-danger" style="width: 50%;">
+                                <p class="text-white">JS <span class="float-right">50%</span> </p>
                             </div>
                         </div>
-
-                      <div class="progress">
-                            <div class="prog-value1">
-                                <p>Python <span text-white float-right>60%</span> </p>
+                        <div class="progress">
+                            <div class="prog-value1 progress-bar bg-primary" style="width: 60%;">
+                                <p class="text-white">Python <span class="float-right">60%</span> </p>
                             </div>
                         </div>
-
-                         <div class="progress">
-                            <div class="prog-value1">
-                                <p>.NET <span text-white float-right>50%</span> </p>
+                        <div class="progress">
+                            <div class="prog-value1 progress-bar bg-info" style="width: 50%;">
+                                <p class="text-white">.NET <span class="float-right">50%</span> </p>
                             </div>
                         </div>
-                        
                         <!-- Other progress bars go here -->
                     </div>
                 </div>
@@ -113,24 +81,12 @@
 
     <!-- Footer -->
     <footer class="bg-dark text-center text-white">
-        <div class="container p-4 pb-0">
-            <!-- Social media links -->
-            <section class="mb-4">
-                <!-- Linkedin -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;"
-                    href="https://www.linkedin.com/in/reema-almurayshid-28018820a/" role="button"><i
-                        class="fab fa-linkedin-in"></i></a>
-                <!-- Github -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #333333;"
-                    href="https://github.com/RMUR99" role="button"><i class="fab fa-github"></i></a>
-            </section>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-            crossorigin="anonymous"></script>
-        <script src="script.js"></script>
+        <!-- Footer content -->
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
