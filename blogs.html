@@ -1,14 +1,11 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <!-- //fontawesome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="blog.css">
   <link rel="stylesheet" href="style.css">
   <title>Blogs</title>
@@ -16,167 +13,67 @@
 <style>
 </style>
 <body>
-  <!-- <nav class="navbar navbar-expand-lg bg-dark navbar-dark"> -->
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark w-100">
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">Home</a>
       <!-- Buttons -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbar-nav"
-        aria-controls="navbar-nav " aria-expanded="false" aria-label="Toggle 
-        navigation">
+      <button class="navbar-toggler" type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#navbarSupportedContent" 
+              aria-controls="navbarSupportedContent" 
+              aria-expanded="false" 
+              aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-       <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">Home</a>
-    <!-- Buttons -->
-    <button class="navbar-toggler" type="button" 
-            data-bs-toggle="collapse" 
-            data-bs-target="#navbarSupportedContent" 
-            aria-controls="navbarSupportedContent" 
-            aria-expanded="false" 
-            aria-label="Toggle navigation">
-      <i class="navbar-toggler-icon"></i>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="aboutme.html">About me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="illustration.html">Illustrations</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="anime.html">Animations</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="gameDesign.html">Game Design</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="blogs.html">Blogs</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact me</a>
-        </li>
-      </ul>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="aboutme.html">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="illustration.html">Illustrations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="anime.html">Animations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gameDesign.html">Game Design</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blogs.html">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact me</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
-
+  </nav>
 
   <div id="content" class="container bg-dark w-100 mt-4">
-    <div class="card">
-      <div class="card-header">
-        <img src="Bash Blog DEV.png" alt="" />
-      </div>
-      <div class="card-body ">
-        <span class="tag tag-teal">Technology</span>
-        <h4>Bashing as a Junior Developer (Gone Right !)</h4>
-        <p>
-          This is a DEV page showing how is it like to bash and try things as a junior
-        </p>
-        <div class="centered-button" onclick="redirectToLink()">
-          Read More
-
-        </div>
-        <div class="user">
-          <a href="https://dev.to/rmur99/bashing-as-a-junior-developer-gone-right--2l3i">
-            <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-black.png" alt="Dev.to" />
-          </a>
-          <div class="user-info">
-            <h5>Reema Almurayshid</h5>
-            <small> 21 Nov</small>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header">
-        <img src="color generator blog .png" alt="" />
-      </div>
-      <div class="card-body">
-        <span class="tag tag-teal">Technology</span>
-        <h4>
-          Color Generator using JS
-        </h4>
-        <p>
-          This is a color generator that uses JS that each time you click a random set of 4 colors appear
-        </p>
-
-        <div class="centered-button-second" onclick="redirectToLinkSecond()">
-          Read More
-
-        </div>
-        <div class="user">
-          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" />
-          <div class="user-info">
-            <h5>Reema Almuayshid</h5>
-            <small>Oct 16 2023</small>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header">
-        <img src="AI.png" alt="" />
-      </div>
-      <div class="card-body">
-        <span class="tag tag-teal">Technology</span>
-        <h4>Customized GPT </h4>
-        <p>
-         this is a GPT model set up and prompt set up using C# and setting up dependencies of lama sharp
-        </p>
-        <div class="centered-button-third" onclick="redirectToLinkThird()">
-          Read More
-
-        </div>
-        <div class="user">
-          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" />
-          <div class="user-info">
-            <h5>Reema Almurayshid</h5>
-            <small> 13 December </small>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- Your card content goes here -->
   </div>
-  <!-- < -- FOOTER > -->
+
   <footer class="bg-dark text-center text-white w-100">
     <!-- Grid container -->
     <div class=" p-4 pb-0">
       <!-- Section: Social media -->
       <section class="mb-4">
-        
-  
         <!-- Linkedin -->
-        <a
-          class="btn text-white btn-floating m-1"
-          style="background-color: #0082ca;"
-          href="https://www.linkedin.com/in/reema-almurayshid-28018820a/"
-          role="button"
-          ><i class="fab fa-linkedin-in"></i
-        ></a>
+        <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="https://www.linkedin.com/in/reema-almurayshid-28018820a/" role="button"><i class="fab fa-linkedin-in"></i></a>
         <!-- Github -->
-        <a
-          class="btn text-white btn-floating m-1"
-          style="background-color: #333333;"
-          href="https://github.com/RMUR99"
-          role="button"
-          ><i class="fab fa-github"></i
-        ></a>
+        <a class="btn text-white btn-floating m-1" style="background-color: #333333;" href="https://github.com/RMUR99" role="button"><i class="fab fa-github"></i></a>
       </section>
       <!-- Section: Social media -->
     </div>
     <!-- Grid container -->
-  
+  </footer>
 
-    <!-- // add it down too bootstrap script -->
-
-    <script src="script.js"></script>
-
-
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-CAkE3V/kyuZo0xwj0tntMJgLRvV4RScj7cCBbvB/JDm5d+xz6VZ8dTZOybKa0MhD" crossorigin="anonymous"></script>
+  <!-- Your custom script -->
+  <script src="script.js"></script>
 </body>
-
 </html>
+
