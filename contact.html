@@ -12,15 +12,15 @@
 
 
     <style>
-        body {
+         body {
           height: 100vh;
           width: 100vw;
-            margin: 0;
-            padding: 0;
-            background-color: #000;
-            padding-bottom: 100px;
-            overflow: hidden;
-          }
+          margin: 0;
+          padding: 0;
+          background-color: #000;
+          overflow-y: scroll; /* Enable vertical scrollbar */
+          padding-bottom: 100px;
+        }
           
           #contact {
             width: 100%;
@@ -275,159 +275,130 @@
 </head>
 <body>
      
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">Home</a>
           <!-- Buttons -->
           <button class="navbar-toggler" type="button" 
           data-bs-toggle="collapse" 
-          data-bs-target="navbar-nav" 
-          aria-controls="navbar-nav " 
+          data-bs-target="#navbarSupportedContent" 
+          aria-controls="navbarSupportedContent" 
           aria-expanded="false" 
           aria-label="Toggle 
           navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
-
-
-            <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">Home</a>
-    <!-- Buttons -->
-    <button class="navbar-toggler" type="button" 
-            data-bs-toggle="collapse" 
-            data-bs-target="#navbarSupportedContent" 
-            aria-controls="navbarSupportedContent" 
-            aria-expanded="false" 
-            aria-label="Toggle navigation">
-      <i class="navbar-toggler-icon"></i>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="aboutme.html">About me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="illustration.html">Illustrations</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="anime.html">Animations</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="gameDesign.html">Game Design</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="blogs.html">Blogs</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact me</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="aboutme.html">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="illustration.html">Illustrations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="anime.html">Animations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gameDesign.html">Game Design</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blogs.html">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
 
 
       
-          
-          <section id="contact" class="container-fluid bg-dark ">
-
-            <div class="row section-banner ">
-              <div class="col-md-offset-3 col-md-6 text-center ">
-                <div>
-                  <span class="line contact"></span>
-                  <span class="section-title contact"></span>
-                  <span class="line contact"></span>
-                </div>
-              </div>
+         <section id="contact" class="container-fluid bg-dark ">
+        <div class="row section-banner ">
+          <div class="col-md-offset-3 col-md-6 text-center ">
+            <div>
+              <span class="line contact"></span>
+              <span class="section-title contact"></span>
+              <span class="line contact"></span>
             </div>
-        
-        
-            <div class="row max ">
-        
-              <!-- email contact -->
-              <div class="col-sm-4 text-center">
-                <div class="desc">
-                  <div class="icon-contact">
-                    <a data-toggle="tooltip" title="Email" data-placement="top" href="mailto:Ralmurayshid.99@gmail.com">
-                      <i class="fa fa-envelope"></i>
-                      <h2>Email</h2>
-                    </a>
-                  </div>
-                </div>
-              </div>
-        
-              <!-- facebook contact -->
-              <div class="col-sm-4 text-center">
-                <div class="desc">
-                  <div class="icon-contact">
-                    <a data-toggle="tooltip" title="CV" data-placement="top" href="Reema Almurayshid CV.pdf" target="_blank">
-                      <i class="fa-solid fa-file-pdf"></i>
-                      <h2>CV</h2>
-                    </a>
-                  </div>
-                </div>
-              </div>
-        
-              <!-- Twitter contact -->
-              <div class="col-sm-4 text-center">
-                <div class="desc">
-                  <div class="icon-contact">
-                    <a data-toggle="tooltip" title="Twitter" data-placement="top" href="https://dev.to/rmur99" target="_blank">
-                      <i class="fa-brands fa-dev"></i>
-                      <h2>DEV</h2>
-                    </a>
-                  </div>
-                </div>
-              </div>
-        
-            </div>
-        
-          </section>
-       
-              
-              
-      
-             
-      
-            </div> 
-          
+          </div>
         </div>
 
-        <footer class="bg-dark text-center text-white">
-          <!-- Grid container -->
-          <div class="container p-0 pb-0">
-            <!-- Section: Social media -->
-            <section class="mb-1">
-              
-        
-              <!-- Linkedin -->
-              <a
-                class="btn text-white btn-floating m-1"
-                style="background-color: #0082ca;"
-                href="https://www.linkedin.com/in/reema-almurayshid-28018820a/"
-                role="button"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-              <!-- Github -->
-              <a
-                class="btn text-white btn-floating m-1"
-                style="background-color: #333333;"
-                href="https://github.com/RMUR99"
-                role="button"
-                ><i class="fab fa-github"></i
-              ></a>
-            </section>
-            <!-- Section: Social media -->
+
+        <div class="row max ">
+
+          <!-- email contact -->
+          <div class="col-sm-4 text-center">
+            <div class="desc">
+              <div class="icon-contact">
+                <a data-toggle="tooltip" title="Email" data-placement="top" href="mailto:Ralmurayshid.99@gmail.com">
+                  <i class="fa fa-envelope"></i>
+                  <h2>Email</h2>
+                </a>
+              </div>
+            </div>
           </div>
-        
-      </section>  
 
-     
-<!-- <script src="script.js"></script> -->
+          <!-- CV -->
+          <div class="col-sm-4 text-center">
+            <div class="desc">
+              <div class="icon-contact">
+                <a data-toggle="tooltip" title="CV" data-placement="top" href="Reema Almurayshid CV.pdf" target="_blank">
+                  <i class="fa-solid fa-file-pdf"></i>
+                  <h2>CV</h2>
+                </a>
+              </div>
+            </div>
+          </div>
 
-<script src="script.js"></script>
+          <!-- Twitter contact -->
+          <div class="col-sm-4 text-center">
+            <div class="desc">
+              <div class="icon-contact">
+                <a data-toggle="tooltip" title="Twitter" data-placement="top" href="https://dev.to/rmur99" target="_blank">
+                  <i class="fa-brands fa-dev"></i>
+                  <h2>DEV</h2>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+    </section>
+
+
+    <footer class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-0 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-1">
+          
+
+          <!-- Linkedin -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #0082ca;"
+            href="https://www.linkedin.com/in/reema-almurayshid-28018820a/"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <!-- Github -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #333333;"
+            href="https://github.com/RMUR99"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
