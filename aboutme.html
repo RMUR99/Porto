@@ -1,92 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <title>About Me</title>
+    <title>About Me </title>
+
     <style>
-        .prog-value1 {
-            height: 20px; /* Adjust this height based on your preference */
+        /* Additional CSS styles */
+        body {
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+        }
+
+        .container-full {
+            margin: auto;
+            width: 100%;
+            padding: 0 15px;
+        }
+
+        .scrollable {
+            overflow-y: auto; /* Enable vertical scrolling */
+            max-height: 100vh; /* Set maximum height to full viewport height */
+        }
+
+        .progress-bar {
+            background-color: black; /* Set progress bar background color */
+        }
+
+        .progress-bar span {
+            color: white; /* Set progress bar text color */
         }
     </style>
 </head>
 
 <body>
-    <!-- Navbar -->
+
+    <!-- navbar -->
+
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <!-- Navbar content -->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <!-- Buttons -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbar-nav"
+                aria-controls="navbar-nav " aria-expanded="false" aria-label="Toggle 
+          navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+
+            <div class="collapse navbar-collapse na" id="navbarSupportedContent">
+                <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="aboutme.html">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="illustration.html">Illustrations</a>
+                    </li>
+
+
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="anime.html">Animations</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="gameDesign.html">Game Design</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="blogs.html">Blogs</a>
+                    </li>
+
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html"> Contact me </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
     </nav>
 
-    <!-- About Me Section -->
-    <div class="container-fluid bg-dark">
-        <section class="aboutme py-5 bg-dark">
-            <div class="container-fluid bg-dark py-5">
+
+
+    <div class="container-fluid bg-dark scrollable">
+
+        <section class="aboutme  py-5 bg-dark">
+            <div class="container-fluid bg-dark  py-5">
+
                 <div class="row bg-dark">
                     <div class="col-lg-5">
-                        <!-- Image goes here -->
+                        <img src="./images/keyboard.jpg" class="img-fluid" alt="keyboard" style="height: 600px;">
                     </div>
-                    <div class="col-lg-7 pt-3 bg-dark">
-                        <h1>About Me</h1>
+
+                    <div class="col-lg-7 pt-3  bg-dark">
+                        <h1>About Me </h1>
                         <p>I am <span class="font-weight-bold">Reema Almurayshid</span> I am Fresh Graduate Information
                             System Student</p>
-                        <p class="py-3">I like learning new things</p>
-                        <!-- Progress Bars -->
+                        <p class="py-3">I like learning new things </p>
+
+                        <!-- <Progress Bar > -->
                         <div class="progress">
-                            <div class="prog-value1 progress-bar bg-success" style="width: 50%;">
-                                <p class="text-white">HTML / CSS <span class="float-right">50%</span> </p>
+                            <div class="prog-value1 progress-bar" style="width: 50%">
+                                <p class="m-0">HTML / CSS <span class="float-end">50%</span> </p>
+
                             </div>
                         </div>
-                        <div class="progress">
-                            <div class="prog-value1 progress-bar bg-info" style="width: 80%;">
-                                <p class="text-white">Illustration <span class="float-right">80%</span> </p>
+
+                        <div class="progress my-3">
+                            <div class="prog-value2 progress-bar" style="width: 80%">
+                                <p class="m-0">Illustration <span class="float-end">80%</span> </p>
+
                             </div>
                         </div>
+
                         <div class="progress">
-                            <div class="prog-value1 progress-bar bg-warning" style="width: 70%;">
-                                <p class="text-white">Game Design <span class="float-right">70%</span> </p>
+                            <div class="prog-value3 progress-bar" style="width: 70%">
+                                <p class="m-0">Game Design <span class="float-end">70%</span> </p>
+
                             </div>
                         </div>
-                        <div class="progress">
-                            <div class="prog-value1 progress-bar bg-secondary" style="width: 70%;">
-                                <p class="text-white">Unity C# <span class="float-right">70%</span> </p>
+
+                        <div class="progress my-3">
+                            <div class="prog-value3 progress-bar" style="width: 70%">
+                                <p class="m-0">Unity C# <span class="float-end">70%</span> </p>
+
                             </div>
                         </div>
-                        <div class="progress">
-                            <div class="prog-value1 progress-bar bg-danger" style="width: 50%;">
-                                <p class="text-white">JS <span class="float-right">50%</span> </p>
+
+                        <div class="progress my-3">
+                            <div class="prog-value3 progress-bar" style="width: 50%">
+                                <p class="m-0">JS <span class="float-end">50%</span> </p>
+
                             </div>
                         </div>
-                        <div class="progress">
-                            <div class="prog-value1 progress-bar bg-primary" style="width: 60%;">
-                                <p class="text-white">Python <span class="float-right">60%</span> </p>
+
+                        <div class="progress my-3">
+                            <div class="prog-value3 progress-bar" style="width: 30%">
+                                <p class="m-0">React <span class="float-end">30%</span> </p>
+
                             </div>
                         </div>
-                        <div class="progress">
-                            <div class="prog-value1 progress-bar bg-info" style="width: 50%;">
-                                <p class="text-white">.NET <span class="float-right">50%</span> </p>
+
+                        <div class="progress my-3">
+                            <div class="prog-value3 progress-bar" style="width: 60%">
+                                <p class="m-0">Bootstrap <span class="float-end">60%</span> </p>
+
                             </div>
                         </div>
-                        <!-- Other progress bars go here -->
+
+                        <div class="progress my-3">
+                            <div class="prog-value3 progress-bar" style="width: 50%">
+                                <p class="m-0">Node.js <span class="float-end">50%</span> </p>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </div>
-        </section>
+
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-center text-white">
-        <!-- Footer content -->
-    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-</body>
-</html>
+
+
+
+    </section>
+
+
+
+
+
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+
+
+                <!-- Linkedin -->
+                <a class="btn text-white btn-floating m-1"
